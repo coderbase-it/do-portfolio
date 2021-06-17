@@ -1,27 +1,29 @@
-<div class="d-flex w-100 justify-content-center p-3">
-    <div class="d-flex flex-fill justify-content-start ml-2">
+<div class="d-flex w-100 justify-content-center">
+    <div class="d-flex flex-fill justify-content-start">
         <h2 class="font-weight-bold">Jane</h2>
         <h2 class="font-weight-light">Doe</h2>
     </div>
-    <div class="d-none d-sm-none d-md-flex  d-lg-flex  d-xl-flex flex-fill justify-content-center">
-        <button type="button" class="ml-3 mr-3 btn btn-outline-dark border-0 font-weight-bold">About</button>
-        <button type="button" class="ml-3 mr-3 btn btn-outline-dark border-0 font-weight-bold">Projects</button>
-        <button type="button" class="ml-3 mr-3 btn btn-outline-dark border-0 font-weight-bold">Skills</button>
+    <div class="d-none d-md-flex flex-fill justify-content-center">
+        <button type="button" class="ml-2 mr-2 btn btn-outline-dark border-0 font-weight-bold">About Me</button>
+        <button type="button" class="ml-2 mr-2 btn btn-outline-dark border-0 font-weight-bold">My Skills</button>
+        <button type="button" class="ml-2 mr-2 btn btn-outline-dark border-0 font-weight-bold">My Projects</button>
+        <button type="button" class="ml-2 mr-2 btn btn-outline-dark border-0 font-weight-bold">My Blog</button>
     </div>
-    <div class="d-none d-sm-none d-md-flex  d-lg-flex  d-xl-flex flex-fill justify-content-end  mr-2">
+    <div class="d-none d-md-flex  flex-fill justify-content-end">
         <button type="button" class="btn btn-dark">Contact Me</button>
     </div>
-    <div class="d-xs-flex d-sm-flex d-md-none  d-lg-none  d-xl-noneflex-fill justify-content-end  mr-2">
-    <div ngbDropdown class="d-inline-block">
-        <button class="btn btn-outline-dark border-0" id="dropdownBasic1" ngbDropdownToggle>
-            <i class="fas fa-lg fa-bars"></i>
-        </button>
-        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-          <button ngbDropdownItem>About</button>
-          <button ngbDropdownItem>Skills</button>
-          <button ngbDropdownItem>Projects</button>
-          <button ngbDropdownItem>Contact Me</button>
+    <div class="d-flex d-md-none flex-fill justify-content-end">
+        <div ngbDropdown class="d-inline-block" display="dynamic">
+            <button class="btn btn-outline-dark border-0" id="dropdownBasic1" ngbDropdownToggle>
+                <i class="fas fa-lg fa-bars"></i>
+            </button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-menu">
+                <button ngbDropdownItem>About Me</button>
+                <button ngbDropdownItem>My Skills</button>
+                <button ngbDropdownItem>My Projects</button>
+                <button ngbDropdownItem>My Blog</button>
+                <button ngbDropdownItem>Contact Me</button>
+            </div>
         </div>
     </div>
-</div>
 </div>
