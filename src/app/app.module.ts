@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ScullyLibModule } from '@scullyio/ng-lib';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { CoreModule } from './core/core.module';
 
@@ -16,7 +15,6 @@ import { CoreModule } from './core/core.module';
     BrowserModule,
     AppRoutingModule,
     ScullyLibModule,
-    NgbModule,
     CoreModule
   ],
   providers: [],
