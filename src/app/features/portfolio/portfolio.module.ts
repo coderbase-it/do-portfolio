@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { PortfolioRoutingModule } from './portfolio-routing.module';
 import { HomeComponent } from './pages/home/home.component';
-import { AboutComponent } from './components/about/about.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { ProjectsComponent } from './components/projects/projects.component';
-import { SkillsComponent } from './components/skills/skills.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { SkillsComponent } from './pages/skills/skills.component';
 
 
 @NgModule({
