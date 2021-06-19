@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ScullyRoute, ScullyRoutesService } from '@scullyio/ng-lib';
-import { Observable } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 @Component({
@@ -10,12 +10,10 @@ import { map } from 'rxjs/operators';
 })
 export class BlogLandingComponent implements OnInit {
   links$: Observable<ScullyRoute[]> = this.scully.available$.pipe(
-    map(routes => routes.filter((route:ScullyRoute) => route.route.startsWith('/blog/')))
+    map(routes => routes.filter((route: ScullyRoute) => route.route.startsWith('/blog/')))
   );
-  
+
   constructor(private scully: ScullyRoutesService) { }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void { }
 }
