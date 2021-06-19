@@ -1,1 +1,27 @@
-<p>contact works!</p>
+<div class="d-flex flex-column align-items-center text-center vw-90">
+    <h1 class="d-none d-md-block display-3 mb-5"><span class="font-weight-bold">Contact</span> Me</h1>
+    <h1 class="d-sm-block d-md-none mb-3"><span class="font-weight-bold">Contact</span> Me</h1>
+    <div class="d-flex vw-90 justify-content-center">
+        <form class="min-vw-40">
+            <div *ngFor="let field of fields" class="form-group">
+                <label class="sr-only" for="inlineFormInputGroup">{{field.placeholder}}</label>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text bg-white border-dark"
+                            [ngClass]="{'align-items-start': field.isTextArea}">
+                            <i [class]="field.iconClasses + ' fa-lg'" [ngClass]="{'mt-1': field.isTextArea}"></i>
+                        </div>
+                    </div>
+                    <input *ngIf="field.isInput" [type]="field.type" class="form-control  border-dark"
+                        id="inlineFormInputGroup" [placeholder]="field.placeholder">
+                    <textarea *ngIf="field.isTextArea" class="form-control border-dark" id="message"
+                        [placeholder]="field.placeholder" rows="3"></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-dark btn-lg">
+                <i class="mr-1 far fa-paper-plane"></i>
+                Send
+            </button>
+        </form>
+    </div>
+</div>
