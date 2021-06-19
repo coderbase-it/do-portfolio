@@ -4,7 +4,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
-import { SharedModule } from '../shared/shared.module';
+import { CommonModule } from '@angular/common';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -13,8 +14,9 @@ import { SharedModule } from '../shared/shared.module';
     NotFoundComponent
   ],
   imports: [
-    SharedModule
-  ], 
+    CommonModule,
+    NgbModule
+  ],
   exports: [
     HeaderComponent,
     FooterComponent
