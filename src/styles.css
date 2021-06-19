@@ -31,9 +31,13 @@ body {
     font-family: 'Nunito', Verdana, Geneva, Tahoma, sans-serif;
     background: white;
     background-image: radial-gradient(lightgray 5%, transparent 0);
-    background-size: 25px 25px;
+    background-size: 35px 35px;
 }
 
-.con-min-vh-90 {
-    min-height: 90vh; 
+.vw-90 {
+    width: 90vw;
+}
+
+.vw-80{
+    width: 80vw;
 }
