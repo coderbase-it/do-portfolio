@@ -14,7 +14,7 @@ import { PostListComponent } from './components/post-list/post-list.component';
   ],
   exports: [
     CommonModule,
-    NgbModule, 
+    NgbModule,
     PostListComponent
   ]
 })

@@ -38,6 +38,10 @@ body {
     width: 90vw;
 }
 
-.vw-80{
+.vw-80 {
     width: 80vw;
+}
+
+.min-vh-10 {
+    min-height: 10vh;
 }
