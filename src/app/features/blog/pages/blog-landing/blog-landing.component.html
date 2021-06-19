@@ -3,15 +3,12 @@
     <div class="d-flex vw-90 justify-content-center flex-wrap">
         <div *ngFor="let page of links$ | async" class="card post-card m-3">
             <div class="card-img-top bg-dark">
-                <i class="fa-4x far fa-bookmark m-5 text-white"></i>
+                <i class="fab fa-angular fa-4x m-5 text-white"></i>
             </div>
             <div class="card-body">
                 <h5 class="card-title post-title" [title]="page.title">{{page.title}}</h5>
                 <p class="card-text post-description">{{page.description}}</p>
-                <a [routerLink]="page.route" class="btn btn-dark">
-                    <i class="fas fa-glasses"></i>
-                    Read
-                </a>
+                <a [routerLink]="page.route" class="btn btn-outline-dark">Read</a>
             </div>
         </div>
     </div>
@@ -21,15 +18,12 @@
     <div class="d-flex flex-column vw-90 align-items-center">
         <div *ngFor="let page of links$ | async" class="card post-card m-3">
             <div class="card-img-top bg-dark">
-                <i class="fa-4x far fa-bookmark m-5 text-white"></i>
+                <i class="fab fa-angular fa-4x m-5 text-white"></i>
             </div>
             <div class="card-body">
                 <h5 class="card-title post-title" [title]="page.title">{{page.title}}</h5>
                 <p class="card-text post-description">{{page.description}}</p>
-                <a [routerLink]="page.route" class="btn btn-dark">
-                    <i class="fas fa-glasses"></i>
-                    Read
-                </a>
+                <a [routerLink]="page.route" class="btn btn-outline-dark">Read</a>
             </div>
         </div>
     </div>
