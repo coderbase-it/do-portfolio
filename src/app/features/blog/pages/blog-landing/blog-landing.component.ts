@@ -1,6 +1,5 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ScullyRoute, ScullyRoutesService } from '@scullyio/ng-lib';
-import { Observable, Subscription } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 @Component({
@@ -8,12 +7,15 @@ import { map } from 'rxjs/operators';
   templateUrl: './blog-landing.component.html',
   styleUrls: ['./blog-landing.component.css']
 })
-export class BlogLandingComponent implements OnInit {
-  links$: Observable<ScullyRoute[]> = this.scully.available$.pipe(
+export class BlogLandingComponent {
+  links$ = this.scully.available$.pipe(
     map(routes => routes.filter((route: ScullyRoute) => route.route.startsWith('/blog/')))
   );
 
-  constructor(private scully: ScullyRoutesService) { }
+  tempOptions = [
+    { viewClasses: 'd-none d-md-flex', displayInColumn: false, titleClasses: 'display-3' },
+    { viewClasses: 'd-sm-flex d-md-none', displayInColumn: true, titleClasses: '' }
+  ];
 
-  ngOnInit(): void { }
+  constructor(private scully: ScullyRoutesService) { }
 }
