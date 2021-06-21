@@ -10,7 +10,7 @@ import { BioService } from 'src/app/data/services/bio.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
   bio$: Observable<Bio> = this.bioService.getBio();
   isHome$: Observable<boolean> = this.router.events.pipe(
     filter(event => event instanceof NavigationEnd),
@@ -38,6 +38,4 @@ export class HeaderComponent implements OnInit {
 
 
   constructor(private bioService: BioService, private router: Router) { }
-
-  ngOnInit(): void { }
 }
