@@ -7,7 +7,7 @@ import { BioService } from 'src/app/data/services/bio.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  bio$ = this.bioService.getBio().pipe();
+  bio$ = this.bioService.getBio();
 
   tempOptions = [
     { viewClasses: 'd-none d-md-flex', headingClass: 'display-3', useSmallerHeadings: false },
