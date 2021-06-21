@@ -1,0 +1,106 @@
+[
+    {
+        "name": "Snake",
+        "stack": {
+            "name": "Vue.js",
+            "iconClasses": "fab fa-vuejs"
+        },
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "sourceUrl": "https://github.com",
+        "previewUrl": "https://github.com"
+    },
+    {
+        "name": "Soduko",
+        "stack": {
+            "name": "Angular",
+            "iconClasses": "fab fa-angular"
+        },
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "sourceUrl": "https://github.com",
+        "previewUrl": "https://github.com",
+        "featured": true
+    },
+    {
+        "name": "Quiz App",
+        "stack": {
+            "name": "React",
+            "iconClasses": "fab fa-react"
+        },
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "sourceUrl": "https://github.com",
+        "previewUrl": "https://github.com"
+    },
+    {
+        "name": "Chat App",
+        "stack": {
+            "name": "Vue.js",
+            "iconClasses": "fab fa-vuejs"
+        },
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "sourceUrl": "https://github.com",
+        "previewUrl": "https://github.com"
+    },
+    {
+        "name": "E-commerce Store",
+        "stack": {
+            "name": "React",
+            "iconClasses": "fab fa-react"
+        },
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "sourceUrl": "https://github.com",
+        "previewUrl": "https://github.com",
+        "featured": true
+    },
+    {
+        "name": "Algorithm Visualization App",
+        "stack": {
+            "name": "Angular",
+            "iconClasses": "fab fa-angular"
+        },
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "sourceUrl": "https://github.com",
+        "previewUrl": "https://github.com",
+        "featured": true
+    },
+    {
+        "name": "Budget App",
+        "stack": {
+            "name": "Vue.js",
+            "iconClasses": "fab fa-vuejs"
+        },
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "sourceUrl": "https://github.com",
+        "previewUrl": "https://github.com"
+    },
+    {
+        "name": "To-do App",
+        "stack": {
+            "name": "Angular",
+            "iconClasses": "fab fa-angular"
+        },
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "sourceUrl": "https://github.com",
+        "previewUrl": "https://github.com"
+    },
+    {
+        "name": "Time Tracking CLI App",
+        "stack": {
+            "name": "Node.js",
+            "iconClasses": "fab fa-node-js"
+        },
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "sourceUrl": "https://github.com",
+        "previewUrl": "https://github.com",
+        "featured": true
+    },
+    {
+        "name": "Blog",
+        "stack": {
+            "name": "Vue.js",
+            "iconClasses": "fab fa-vuejs"
+        },
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "sourceUrl": "https://github.com",
+        "previewUrl": "https://github.com"
+    }
+]

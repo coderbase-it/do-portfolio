@@ -1,9 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
-import { Observable } from 'rxjs';
-import { filter, map, share } from 'rxjs/operators';
-import { Bio } from 'src/app/data/models/bio';
+import { Component } from '@angular/core';
 import { BioService } from 'src/app/data/services/bio.service';
+import { HeaderService } from 'src/app/data/services/header.service';
 
 @Component({
   selector: 'app-header',
@@ -11,20 +8,8 @@ import { BioService } from 'src/app/data/services/bio.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  bio$: Observable<Bio> = this.bioService.getBio();
-  isHome$: Observable<boolean> = this.router.events.pipe(
-    filter(event => event instanceof NavigationEnd),
-    map(event => {
-      if (event instanceof NavigationEnd) {
-        if (event.url.startsWith('/#') || event.url == '/') {
-          return true;
-        }
-      }
-
-      return false;
-    }),
-    share()
-  );
+  bio$ = this.bioService.getBio();
+  isHome$ = this.headerService.isHome();
 
   menuItems = [
     { title: 'About Me', homePath: '/', fragment: 'about', pagePath: '/about' },
@@ -37,5 +22,5 @@ export class HeaderComponent {
   ]);
 
 
-  constructor(private bioService: BioService, private router: Router) { }
+  constructor(private bioService: BioService, private headerService: HeaderService) { }
 }

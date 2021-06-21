@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { mergeMap } from 'rxjs/operators';
+import { HeaderService } from 'src/app/data/services/header.service';
+import { ProjectsService } from 'src/app/data/services/projects.service';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css']
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent {
+  isHome$ = this.headerService.isHome();
+  projects$ = this.isHome$.pipe(
+    mergeMap(atHome => this.projectsService.getProjects(atHome))
+  );
 
-  constructor() { }
+  tempOptions = [
+    { viewClasses: 'd-none d-md-flex', displayInColumn: false, useSmallerHeadings: false, titleClasses: 'display-3' },
+    { viewClasses: 'd-sm-flex d-md-none', displayInColumn: true, useSmallerHeadings: true, titleClasses: '' }
+  ];
 
-  ngOnInit(): void {
-  }
-
+  constructor(private projectsService: ProjectsService, private headerService: HeaderService) { }
 }
