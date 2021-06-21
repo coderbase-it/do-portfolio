@@ -10,6 +10,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { SkillsComponent } from './pages/skills/skills.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { SkillsComponent } from './pages/skills/skills.component';
   imports: [
     CommonModule,
     NgbModule,
+    ReactiveFormsModule,
     PortfolioRoutingModule
   ]
 })
