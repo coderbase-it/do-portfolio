@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SocialsService } from 'src/app/data/services/socials.service';
 
 @Component({
   selector: 'app-footer',
@@ -6,13 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
-  footerItems = [
-    { tooltip: 'Dev.to', iconClasses: ' fab fa-dev', url: 'https://dev.to' },
-    { tooltip: 'Dribbble', iconClasses: ' fab fa-dribbble', url: 'https://dribbble.com' },
-    { tooltip: 'Github', iconClasses: ' fab fa-github-alt', url: 'https://github.com' },
-    { tooltip: 'LinkedIn', iconClasses: ' fab fa-linkedin-in', url: 'https://linkedin.com' },
-    { tooltip: 'Twitter', iconClasses: ' fab fa-twitter', url: 'https://twitter.com' },
-  ];
+  footerItems$ = this.socialsService.getSocialAccounts();
 
-  constructor() { }
+  constructor(private socialsService: SocialsService) { }
 }
