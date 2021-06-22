@@ -18,3 +18,5 @@ npx scully
 ```
 npm run scully:serve
 ```
+
+5. View the app at [localhost:1668](http://localhost:1668).
