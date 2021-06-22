@@ -21,8 +21,7 @@ export class HeaderService {
 
         return false;
       }),
-      startWith(this.router.url.startsWith('/#') || this.router.url == '/'),
-      share()
+      startWith(this.router.url.startsWith('/#') || this.router.url == '/')
     );
   }
 }
