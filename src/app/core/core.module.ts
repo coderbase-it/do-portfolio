@@ -18,7 +18,7 @@ import { DataModule } from '../data/data.module';
   imports: [
     CommonModule,
     NgbModule,
-    RouterModule.forRoot([], { anchorScrolling: 'enabled' }),
+    RouterModule,
     DataModule
   ],
   exports: [
