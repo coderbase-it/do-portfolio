@@ -14,14 +14,18 @@ export class HeaderService {
       filter(event => event instanceof NavigationEnd),
       map(event => {
         if (event instanceof NavigationEnd) {
-          if (event.url.startsWith('/#') || event.url == '/') {
+          if (this.checkForHomeUrl(event.url)) {
             return true;
           }
         }
 
         return false;
       }),
-      startWith(this.router.url.startsWith('/#') || this.router.url == '/')
+      startWith(this.checkForHomeUrl(this.router.url))
     );
+  }
+
+  private checkForHomeUrl(url: string): boolean {
+    return url.startsWith('/#') || url == '/';
   }
 }
