@@ -13,10 +13,6 @@ const routes: Routes = [
     loadChildren: () => import('./features/blog/blog.module').then(m => m.BlogModule)
   },
   {
-    path: 'thank-you',
-    component: ThankYouComponent
-  },
-  {
     path: '404',
     component: NotFoundComponent
   },

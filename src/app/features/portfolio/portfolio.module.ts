@@ -11,6 +11,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ThankYouComponent } from './pages/thank-you/thank-you.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AboutComponent,
     ContactComponent,
     ProjectsComponent,
-    SkillsComponent
+    SkillsComponent,
+    ThankYouComponent
   ],
   imports: [
     CommonModule,
