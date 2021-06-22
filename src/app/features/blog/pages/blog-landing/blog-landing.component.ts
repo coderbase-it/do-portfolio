@@ -14,7 +14,7 @@ export class BlogLandingComponent {
 
   tempOptions = [
     { viewClasses: 'd-none d-md-flex', displayInColumn: false, titleClasses: 'display-3' },
-    { viewClasses: 'd-sm-flex d-md-none', displayInColumn: true, titleClasses: '' }
+    { viewClasses: 'd-flex d-md-none', displayInColumn: true, titleClasses: '' }
   ];
 
   constructor(private scully: ScullyRoutesService) { }

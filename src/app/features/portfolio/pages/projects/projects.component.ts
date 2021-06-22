@@ -16,7 +16,7 @@ export class ProjectsComponent {
 
   tempOptions = [
     { viewClasses: 'd-none d-md-flex', displayInColumn: false, useSmallerHeadings: false, titleClasses: 'display-3' },
-    { viewClasses: 'd-sm-flex d-md-none', displayInColumn: true, useSmallerHeadings: true, titleClasses: '' }
+    { viewClasses: 'd-flex d-md-none', displayInColumn: true, useSmallerHeadings: true, titleClasses: '' }
   ];
 
   constructor(private projectsService: ProjectsService, private headerService: HeaderService) { }

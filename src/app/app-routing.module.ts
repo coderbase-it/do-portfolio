@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NotFoundComponent } from './core/pages/not-found/not-found.component';
-import { ThankYouComponent } from './core/pages/thank-you/thank-you.component';
 
 const routes: Routes = [
   {
