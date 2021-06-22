@@ -8,12 +8,14 @@ import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { DataModule } from '../data/data.module';
+import { ThankYouComponent } from './pages/thank-you/thank-you.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ThankYouComponent
   ],
   imports: [
     CommonModule,

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NotFoundComponent } from './core/pages/not-found/not-found.component';
+import { ThankYouComponent } from './core/pages/thank-you/thank-you.component';
 
 const routes: Routes = [
   {
@@ -10,6 +11,10 @@ const routes: Routes = [
   {
     path: 'blog',
     loadChildren: () => import('./features/blog/blog.module').then(m => m.BlogModule)
+  },
+  {
+    path: 'thank-you',
+    component: ThankYouComponent
   },
   {
     path: '404',

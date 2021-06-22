@@ -9,6 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class ContactComponent {
   formSubmitUrl = environment.formSubmirUrl;
+  thankYouPageUrl = environment.thankYouPageUrl;
 
   contactForm = this.fb.group({
     name: ['', Validators.required],

@@ -20,6 +20,7 @@
                         required></textarea>
                 </div>
             </div>
+            <input type="hidden" name="_next" [value]="thankYouPageUrl">
             <button type="submit" class="btn btn-dark btn-lg" [disabled]="!contactForm.valid" (click)="form.submit()">
                 <i class="mr-1 far fa-paper-plane"></i>
                 Send
