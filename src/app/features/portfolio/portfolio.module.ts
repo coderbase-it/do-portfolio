@@ -4,6 +4,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { PortfolioRoutingModule } from './portfolio-routing.module';
 
 
 @NgModule({
@@ -14,7 +16,12 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule,
+    PortfolioRoutingModule
+  ],
+  exports: [
+    HeaderComponent
   ]
 })
 export class PortfolioModule { }
