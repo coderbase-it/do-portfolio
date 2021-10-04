@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { PortfolioRoutingModule } from './portfolio-routing.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { PortfolioRoutingModule } from './portfolio-routing.module';
   imports: [
     CommonModule,
     HttpClientModule,
+    NgbModule,
     RouterModule,
     PortfolioRoutingModule
   ],

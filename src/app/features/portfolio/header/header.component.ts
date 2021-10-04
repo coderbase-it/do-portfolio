@@ -15,8 +15,6 @@ export class HeaderComponent {
     { title: 'My Projects', homePath: '/', fragment: 'projects', pagePath: '/projects' },
     { title: 'My Blog', homePath: '/blog', fragment: '', pagePath: '/blog' }
   ];
-  smMenuItems = this.menuItems;
-
 
   constructor(private bioService: BioService, private headerService: HeaderService) { }
 }
