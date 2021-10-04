@@ -1,15 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { BioService } from '../home/bio.service';
+import { HeaderService } from './header.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
+  bio$ = this.bioService.getBio();
+  isHome$ = this.headerService.isHome();
 
-  constructor() { }
+  menuItems = [
+    { title: 'My Projects', homePath: '/', fragment: 'projects', pagePath: '/projects' },
+    { title: 'My Blog', homePath: '/blog', fragment: '', pagePath: '/blog' }
+  ];
+  smMenuItems = this.menuItems;
 
-  ngOnInit(): void {
-  }
 
+  constructor(private bioService: BioService, private headerService: HeaderService) { }
 }
