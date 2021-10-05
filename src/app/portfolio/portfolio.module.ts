@@ -3,7 +3,6 @@ import { ProjectsComponent } from './projects/projects.component';
 import { HomeComponent } from './home/home.component';
 import { PortfolioRoutingModule } from './portfolio-routing.module';
 import { AboutComponent } from './about/about.component';
-import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 
@@ -15,7 +14,6 @@ import { CommonModule } from '@angular/common';
   ],
   imports: [
     CommonModule,
-    RouterModule,
     PortfolioRoutingModule
   ]
 })
