@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { BioService } from '../about/bio.service';
+import { BioService } from '../services/bio.service';
 import { HeaderService } from './header.service';
 
 @Component({

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { mergeMap } from 'rxjs/operators';
-import { HeaderService } from '../header/header.service';
-import { ProjectsService } from './projects.service';
+import { HeaderService } from '../../core/header/header.service';
+import { ProjectsService } from '../../core/services/projects.service';
 
 @Component({
   selector: 'app-projects',

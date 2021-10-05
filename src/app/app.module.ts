@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ScullyLibModule } from '@scullyio/ng-lib';
-import { PortfolioModule } from './portfolio/portfolio.module';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { PortfolioModule } from './portfolio/portfolio.module';
     BrowserModule,
     AppRoutingModule,
     ScullyLibModule,
-    PortfolioModule
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
