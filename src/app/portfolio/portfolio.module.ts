@@ -3,7 +3,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { HomeComponent } from './home/home.component';
 import { PortfolioRoutingModule } from './portfolio-routing.module';
 import { AboutComponent } from './about/about.component';
-import { CoreModule } from '../core/core.module';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { CoreModule } from '../core/core.module';
     AboutComponent
   ],
   imports: [
-    CoreModule,
+    CommonModule,
+    RouterModule,
     PortfolioRoutingModule
   ]
 })

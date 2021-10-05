@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { mergeMap } from 'rxjs/operators';
-import { HeaderService } from '../../core/header/header.service';
+import { HeaderService } from '../../core/services/header.service';
 import { ProjectsService } from '../../core/services/projects.service';
 
 @Component({
