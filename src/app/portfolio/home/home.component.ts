@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { BioService } from './bio.service';
+import { BioService } from '../about/bio.service';
 
 @Component({
   selector: 'app-home',
