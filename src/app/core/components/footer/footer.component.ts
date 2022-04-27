@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BioService } from 'src/app/data/services/bio.service';
 import { SocialsService } from 'src/app/data/services/socials.service';
 
 @Component({
@@ -8,6 +9,7 @@ import { SocialsService } from 'src/app/data/services/socials.service';
 })
 export class FooterComponent {
   footerItems$ = this.socialsService.getSocialAccounts();
-
-  constructor(private socialsService: SocialsService) { }
+  bio$ = this.bioService.getBio();
+  dateOfToday = new Date()
+  constructor(private socialsService: SocialsService, private bioService: BioService) { }
 }

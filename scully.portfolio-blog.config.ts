@@ -1,4 +1,6 @@
-import { ScullyConfig } from '@scullyio/scully';
+import { ScullyConfig, setPluginConfig } from '@scullyio/scully';
+import 'prismjs/components/prism-yaml.js';
+setPluginConfig('md',  { enableSyntaxHighlighting: true });
 export const config: ScullyConfig = {
   projectRoot: "./src",
   projectName: "portfolio-blog",

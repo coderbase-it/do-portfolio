@@ -45,3 +45,7 @@ body {
 .min-vh-10 {
     min-height: 10vh;
 }
+
+
+/* check node_modules/prismjs/themes/ for the available themes */
+@import '~prismjs/themes/prism-okaidia';

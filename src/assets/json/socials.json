@@ -1,27 +1,13 @@
 [
-    {
-        "tooltip": "Dev.to",
-        "iconClasses": " fab fa-dev",
-        "url": "https: //dev.to"
-    },
-    {
-        "tooltip": "Dribbble",
-        "iconClasses": " fab fa-dribbble",
-        "url": "https: //dribbble.com"
-    },
+
     {
         "tooltip": "Github",
         "iconClasses": " fab fa-github-alt",
-        "url": "https: //github.com"
+        "url": "https://github.com/coderbase-it"
     },
     {
         "tooltip": "LinkedIn",
         "iconClasses": " fab fa-linkedin-in",
-        "url": "https: //linkedin.com"
-    },
-    {
-        "tooltip": "Twitter",
-        "iconClasses": " fab fa-twitter",
-        "url": "https: //twitter.com"
+        "url": "https://www.linkedin.com/in/pierrenedelec2/"
     }
 ]

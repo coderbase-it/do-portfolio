@@ -5,5 +5,6 @@
             <i class="fa-2x" [ngClass]="item.iconClasses"></i>
         </a>
     </div>
-    <h5 class="text-center font-weight-bold pb-3">© Jane Doe</h5>
+    <h5 class="text-center font-weight-bold pb-3"  *ngIf="bio$ | async as bio"> {{bio.firstName+'
+        '+bio.lastName}} {{dateOfToday| date:'YYYY'}}©</h5>
 </div>

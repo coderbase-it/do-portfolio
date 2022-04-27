@@ -1,7 +1,28 @@
 [
     {
-        "name": "React",
-        "iconClasses": "fab fa-react",
+        "name": "Angular",
+        "iconClasses": "fab fa-angular",
+        "category": "Expert Skills +10years"
+    },
+    {
+        "name": "Python",
+        "iconClasses": "fab fa-python",
+        "category": "Core Skills"
+    },
+    {
+        "name": "Sass",
+        "iconClasses": "fab fa-sass",
+        "category": "Core Skills"
+    },
+    {
+        "name": "Jenkins",
+        "iconClasses": "fab fa-jenkins",
+        "category": "Core Skills"
+    },
+   
+    {
+        "name": "CSS3",
+        "iconClasses": "fab fa-css3-alt",
         "category": "Core Skills"
     },
     {
@@ -10,8 +31,8 @@
         "category": "Core Skills"
     },
     {
-        "name": "Vue.js",
-        "iconClasses": "fab fa-vuejs",
+        "name": "JS",
+        "iconClasses": "fab fa-js",
         "category": "Core Skills"
     },
     {
@@ -22,41 +43,46 @@
     {
         "name": "Docker",
         "iconClasses": "fab fa-docker",
-        "category": "Dabbled In"
+        "category": "Core Skills"
     },
     {
-        "name": "Ember.js",
-        "iconClasses": "fab fa-ember",
-        "category": "Dabbled In"
-    },
-    {
-        "name": "Android",
-        "iconClasses": "fab fa-android",
-        "category": "Dabbled In"
-    },
-    {
-        "name": "Java",
-        "iconClasses": "fab fa-java",
-        "category": "Dabbled In"
+        "name": "NPM",
+        "iconClasses": "fab fa-npm",
+        "category": "Core Skills"
     },
     {
         "name": "Python",
         "iconClasses": "fab fa-python",
-        "category": "Learning"
+        "category": "Core Skills"
     },
     {
         "name": "Sass",
         "iconClasses": "fab fa-sass",
-        "category": "Learning"
-    },
-    {
-        "name": "Swift",
-        "iconClasses": "fab fa-swift",
-        "category": "Learning"
+        "category": "Core Skills"
     },
     {
         "name": "AWS",
         "iconClasses": "fab fa-aws",
-        "category": "Learning"
+        "category": "Confortable with"
+    },
+    {
+        "name": "MySql",
+        "iconClasses": "fas fa-database",
+        "category": "Confortable with"
+    },
+    {
+        "name": "Github",
+        "iconClasses": "fab fa-github",
+        "category": "Confortable with"
+    },
+    {
+        "name": "Gitlab",
+        "iconClasses": "fab fa-gitlab",
+        "category": "Confortable with"
+    },
+    {
+        "name": "Firebase",
+        "iconClasses": "fas fa-fire",
+        "category": "Confortable with"
     }
 ]

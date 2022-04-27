@@ -8,8 +8,8 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
-  formSubmitUrl = environment.formSubmitUrl;
-  thankYouPageUrl = environment.thankYouPageUrl;
+  // formSubmitUrl = environment.formSubmitUrl;
+  // thankYouPageUrl = environment.thankYouPageUrl;
 
   contactForm = this.fb.group({
     name: ['', Validators.required],
