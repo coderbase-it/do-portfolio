@@ -1,10 +1,10 @@
 ---
-title: Create a Blog using Vue
-description: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...'
+title: Angular Control Value Accessor
+description: 'Utiliser l\'implémentation du control value Accessor pour créer un morceaux de com'
 published: true
 ---
 
-# Create a Blog using Vue
+# Angular Control Value Accessor
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae tempor erat, eget accumsan lorem. Ut id sem id massa mattis dictum ullamcorper vitae massa. In luctus neque lectus, quis dictum tortor elementum sit amet. Mauris non lacinia nisl. Nulla tristique arcu quam, quis posuere diam elementum nec. Curabitur in mi ut purus bibendum interdum ut sit amet orci. Duis aliquam tristique auctor. Suspendisse magna magna, pellentesque vitae aliquet ac, sollicitudin faucibus est. Integer semper finibus leo, eget placerat enim auctor quis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed aliquam nibh in mi convallis mattis nec ac mi. Nam sed sagittis purus.
 
